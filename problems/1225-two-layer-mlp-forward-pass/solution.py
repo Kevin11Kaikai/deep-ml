@@ -15,10 +15,19 @@ def two_layer_mlp_forward(x, w1, b1, w2, b2):
     Returns:
         float: Scalar network output.
     """
+    # step 1: construct the mlp using nn.Sequentail
+    model = nn.Sequential(nn.Linear(2,2),
+    nn.ReLU(),
+    nn.Linear(2,1))
     with torch.no_grad():
-        output1 = x @ w1.T + b1 # output1 (1,2)
-        output1 = nn.ReLU()(output1) # output1 (1,2)
-        output2 = output1 @ w2.T + b2
-    return output2.item()
+    # step 2: copy the provided tensors into the module parameters
+        model[0].weight.copy_(w1)
+        model[0].bias.copy_(b1)
+        model[2].weight.copy_(w2)
+        model[2].bias.copy_(b2)
+        # Step 3: run a forward pass on input 'x'
+        output = model(x)
+    # Step 4: return the result as a Python 'float'
+    return output.item()
     # TODO
     #pass
