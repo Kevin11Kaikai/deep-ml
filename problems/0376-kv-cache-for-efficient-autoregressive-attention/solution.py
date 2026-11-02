@@ -24,7 +24,7 @@ def kv_cache_attention_step(x_new: np.ndarray, W_Q: np.ndarray, W_K: np.ndarray,
     K = x_new @ W_K
     V = x_new @ W_V
     # 2. append k,v as the new rows of the cache
-    if cache == None:
+    if cache is None:
         K_cache, V_cache = None, None
     else:
         K_cache, V_cache = cache

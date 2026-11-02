@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-02T21:26:04.409Z",
+  "generated_at": "2026-11-02T21:28:27.825Z",
   "items": {
     "problem:24": {
       "kind": "problem",
@@ -62,7 +62,7 @@
       "url": "https://www.deep-ml.com/problems/376",
       "path": "problems/0376-kv-cache-for-efficient-autoregressive-attention",
       "first_solved_at": "2026-11-02T21:26:03.737Z",
-      "last_pushed_at": "2026-11-02T21:26:03.737Z",
+      "last_pushed_at": "2026-11-02T21:28:27.193Z",
       "language": "python",
       "lines": 45
     }
