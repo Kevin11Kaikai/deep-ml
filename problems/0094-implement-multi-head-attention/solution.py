@@ -64,12 +64,8 @@ def multi_head_attention(Q: np.ndarray, K: np.ndarray, V: np.ndarray, n_heads: i
     Q = Q.reshape(seq_len,n_heads,d_heads).swapaxes(-3,-2)
     K = K.reshape(seq_len,n_heads,d_heads).swapaxes(-3,-2)
     V = V.reshape(seq_len,n_heads,d_heads).swapaxes(-3,-2)
-    # 3. scores 
-    scores = Q @ K.swapaxes(-2,-1) / np.sqrt(d_heads)
-    # 4. weights
-    weights = softmax(scores)
-    # 5. results
-    results = weights @ V
+    # 3. self self_attention
+    results = self_attention(Q,K,V)
     results = results.swapaxes(-3,-2).reshape(seq_len, d_model)
     #results = results.reshape((seq_len, d_heads))
     return results
