@@ -2,7 +2,7 @@
 
 My machine learning practice from [Deep-ML](https://www.deep-ml.com). Every solution here was written by hand.
 
-**7** solved · 7 problems · 0 labs · 0 math
+**8** solved · 8 problems · 0 labs · 0 math
 
 ![Coverage](./coverage.svg)
 
@@ -18,6 +18,7 @@ My machine learning practice from [Deep-ML](https://www.deep-ml.com). Every solu
 | [Transfer Weights from Linear-Style to Parameter-Style Self-Attention](https://www.deep-ml.com/problems/964) | medium | 2026-11-03 | [solution](problems/0964-transfer-weights-from-linear-style-to-parameter-style-self-attention) |
 | [Two-Layer MLP Forward Pass](https://www.deep-ml.com/problems/1225) | medium | 2026-11-01 | [solution](problems/1225-two-layer-mlp-forward-pass) |
 | [Implement Multi-Head Attention](https://www.deep-ml.com/problems/94) | hard | 2026-11-03 | [solution](problems/0094-implement-multi-head-attention) |
+| [Implement the GRPO Objective Function](https://www.deep-ml.com/problems/101) | hard | 2026-11-04 | [solution](problems/0101-implement-the-grpo-objective-function) |
 | [Train Logistic Regression with Gradient Descent](https://www.deep-ml.com/problems/106) | hard | 2026-10-30 | [solution](problems/0106-train-logistic-regression-with-gradient-descent) |
 
 ---
